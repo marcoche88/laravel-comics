@@ -3,5 +3,25 @@
 @section('title','Home')
 
 @section('content')
-    @include('includes.hero')    
+    {{-- hero section --}}
+    @include('includes.hero')
+
+    {{-- cards section --}}
+    <section id="contents">
+        <section class="series-contents container">
+            <div class="title">current series</div>
+            <div class="series">
+                @foreach ($comics as $comic)
+                <div class="card">
+                    <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}" />
+                    <figcaption>{{ $comic['series'] }}</figcaption>
+                </div>
+                @endforeach
+            </div>
+            <div class="load-more">
+                <div class="button-load pointer">load more</div>
+            </div>
+        </section>
+    </section>
+    @include('includes.content_blue') 
 @endsection

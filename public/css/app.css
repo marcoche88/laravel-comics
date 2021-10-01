@@ -142,3 +142,88 @@ header figure {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#contents-blue {
+  background-color: #0282F9;
+  height: 120px;
+}
+#contents-blue ul.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+}
+#contents-blue ul.row li.col {
+  display: inline-block;
+  color: white;
+}
+#contents-blue ul.row li.col a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#contents-blue ul.row li.col a img {
+  height: 40px;
+  margin-right: 10px;
+}
+#contents-blue ul.row li.col a span {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+#contents {
+  background-color: #1c1c1c;
+  color: white;
+}
+#contents .series-contents {
+  position: relative;
+}
+#contents .title {
+  background-color: #0282F9;
+  padding: 10px 30px;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: -20px;
+}
+#contents .series {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#contents .load-more {
+  text-align: center;
+  padding: 25px;
+}
+#contents .load-more .button-load {
+  display: inline-block;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: #0282F9;
+}
+#contents .card {
+  flex-basis: 200px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#contents .card img {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+#contents .card figcaption {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+}

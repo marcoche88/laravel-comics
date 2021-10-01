@@ -23,5 +23,7 @@
             </div>
         </section>
     </section>
+
+    {{-- content blue section --}}
     @include('includes.content_blue') 
 @endsection

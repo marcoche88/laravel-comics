@@ -48,10 +48,37 @@
                 flex-basis: 25%;
                 padding: 12px;
             }
-    }
-    .text {
-        color: rgb(21, 63, 91);
+        }
+        .text {
+        color: #666;
         padding: 15px 0;
+        font-size: 12px;
+        line-height: 20px;
+        }
     }
-}
+    .info-box {
+        background-color: lightgray;
+        .info {
+            display: flex;
+            justify-content: center;
+            .talent, .specs {
+                flex-basis: 50%;
+                color: rgb(21, 63, 91);
+            }
+            .talent {
+                padding-right: 20px;
+            }
+            .specs {
+                padding-left: 20px;
+            }
+            h3 {
+                margin: 10px 0;
+                border-bottom: 1px solid grey;
+            }
+            .art, .written {
+                display: flex;
+                border-bottom: 1px solid gray;
+            }
+        }
+    }
 }

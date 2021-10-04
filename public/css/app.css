@@ -286,6 +286,33 @@ header figure {
   padding: 12px;
 }
 #comic .row .text {
-  color: #153f5b;
+  color: #666;
   padding: 15px 0;
+  font-size: 12px;
+  line-height: 20px;
+}
+#comic .info-box {
+  background-color: lightgray;
+}
+#comic .info-box .info {
+  display: flex;
+  justify-content: center;
+}
+#comic .info-box .info .talent, #comic .info-box .info .specs {
+  flex-basis: 50%;
+  color: #153f5b;
+}
+#comic .info-box .info .talent {
+  padding-right: 20px;
+}
+#comic .info-box .info .specs {
+  padding-left: 20px;
+}
+#comic .info-box .info h3 {
+  margin: 10px 0;
+  border-bottom: 1px solid grey;
+}
+#comic .info-box .info .art, #comic .info-box .info .written {
+  display: flex;
+  border-bottom: 1px solid gray;
 }

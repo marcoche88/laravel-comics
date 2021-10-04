@@ -8,10 +8,18 @@
     <title>DC Comics | @yield('title')</title>
 </head>
 <body>
+    {{-- header --}}
     @include('includes.header')
+
+    {{-- jumbotron --}}
+    <section class="jumbotron"></section>
+
+    {{-- main content --}}
     <main>
         @yield('content')
     </main>
+
+    {{-- footer --}}
     @include('includes.footer')
 </body>
 </html>

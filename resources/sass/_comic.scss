@@ -1,0 +1,57 @@
+#comic {
+    .cover {
+        background-color: $primary-color;
+        height: 70px;
+        position: relative;
+        img {
+            border: 1px solid white;
+            height: 200px;
+            position: absolute;
+            bottom: 15px;
+        }
+    }
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .description, .adv {
+            padding: 20px;
+        }
+        .description {
+            flex-basis: 70%;
+        }
+        .adv {
+            flex-basis: 30%;
+        }
+        h1 {
+            text-transform: uppercase;
+            color: rgb(21, 63, 91);
+            margin: 20px 0;
+        }
+        .price {
+            display: flex;
+            background-color: rgb(112, 183, 100);
+            color: white;
+            font-size: 12px;
+            .price-left {
+                flex-basis: 75%;
+                padding: 12px;
+                display: flex;
+                justify-content: space-between;
+                color: rgb(171, 236, 154);
+                span {
+                    color: white;
+                }
+            }
+            .price-right {
+                border-left: 1px solid rgb(85, 141, 77);
+                flex-basis: 25%;
+                padding: 12px;
+            }
+    }
+    .text {
+        color: rgb(21, 63, 91);
+        padding: 15px 0;
+    }
+}
+}

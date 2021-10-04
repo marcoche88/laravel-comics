@@ -233,3 +233,59 @@ header figure {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.8);
 }
+
+#comic .cover {
+  background-color: #0282F9;
+  height: 70px;
+  position: relative;
+}
+#comic .cover img {
+  border: 1px solid white;
+  height: 200px;
+  position: absolute;
+  bottom: 15px;
+}
+#comic .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#comic .row .description, #comic .row .adv {
+  padding: 20px;
+}
+#comic .row .description {
+  flex-basis: 70%;
+}
+#comic .row .adv {
+  flex-basis: 30%;
+}
+#comic .row h1 {
+  text-transform: uppercase;
+  color: #153f5b;
+  margin: 20px 0;
+}
+#comic .row .price {
+  display: flex;
+  background-color: #70b764;
+  color: white;
+  font-size: 12px;
+}
+#comic .row .price .price-left {
+  flex-basis: 75%;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  color: #abec9a;
+}
+#comic .row .price .price-left span {
+  color: white;
+}
+#comic .row .price .price-right {
+  border-left: 1px solid #558d4d;
+  flex-basis: 25%;
+  padding: 12px;
+}
+#comic .row .text {
+  color: #153f5b;
+  padding: 15px 0;
+}

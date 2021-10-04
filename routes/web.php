@@ -14,8 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $data = ['comics' => config('comics')];
-    return view('home', $data);
+    return view('home');
 })->name('home');
 
 Route::get('/characters', function () {
@@ -23,8 +22,15 @@ Route::get('/characters', function () {
 })->name('characters');
 
 Route::get('/comics', function () {
-    return view('comics');
+    $data = ['comics' => config('comics')];
+    return view('comics', $data);
 })->name('comics');
+
+Route::get('/comics/{id}', function ($id) {
+    $comics = config('comics');
+    $comic = $comics[$id];
+    return view('comic', compact('comic'));
+})->name('comic');
 
 Route::get('/movies', function () {
     return view('movies');

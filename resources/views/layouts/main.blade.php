@@ -8,8 +8,8 @@
     <title>DC Comics | @yield('title')</title>
 </head>
 <body>
-    {{-- header --}}
-    @include('includes.header')
+    {{-- header con i dati del config main_menu --}}
+    @include('includes.header', ['links' => config('main_menu')])
 
     {{-- jumbotron --}}
     <section class="jumbotron"></section>

@@ -292,7 +292,8 @@ header figure {
   line-height: 20px;
 }
 #comic .info-box {
-  background-color: lightgray;
+  background-color: #f6f6f6;
+  padding-bottom: 80px;
 }
 #comic .info-box .info {
   display: flex;
@@ -309,10 +310,29 @@ header figure {
   padding-left: 20px;
 }
 #comic .info-box .info h3 {
-  margin: 10px 0;
-  border-bottom: 1px solid grey;
+  padding: 20px 0;
+  border-bottom: 1px solid #eaeaea;
 }
-#comic .info-box .info .art, #comic .info-box .info .written {
+#comic .info-box .info .art, #comic .info-box .info .written, #comic .info-box .info .series, #comic .info-box .info .us-price, #comic .info-box .info .onsale-date {
   display: flex;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #eaeaea;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 10px 0;
+}
+#comic .info-box .info p {
+  flex-basis: 20%;
+}
+#comic .info-box .info .artists, #comic .info-box .info .writers, #comic .info-box .info .series-name, #comic .info-box .info .price-value {
+  flex-basis: 70%;
+  color: #83c5e4;
+}
+#comic .info-box .info .series, #comic .info-box .info .us-price, #comic .info-box .info .onsale-date {
+  justify-content: flex-start;
+}
+#comic .info-box .info .series-name {
+  text-transform: uppercase;
+}
+#comic .info-box .info .price-value {
+  color: #666;
 }

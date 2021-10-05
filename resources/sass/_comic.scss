@@ -1,4 +1,5 @@
 #comic {
+    // section blue with img
     .cover {
         background-color: $primary-color;
         height: 70px;
@@ -10,6 +11,8 @@
             bottom: 15px;
         }
     }
+
+    // section details comic with adv
     .row {
         display: flex;
         justify-content: center;
@@ -56,8 +59,11 @@
         line-height: 20px;
         }
     }
+
+    // section info comic
     .info-box {
-        background-color: lightgray;
+        background-color: rgb(246, 246, 246);
+        padding-bottom: 80px;
         .info {
             display: flex;
             justify-content: center;
@@ -72,12 +78,31 @@
                 padding-left: 20px;
             }
             h3 {
-                margin: 10px 0;
-                border-bottom: 1px solid grey;
+                padding: 20px 0;
+                border-bottom: 1px solid rgb(234, 234, 234);
             }
-            .art, .written {
+            .art, .written, .series, .us-price, .onsale-date {
                 display: flex;
-                border-bottom: 1px solid gray;
+                border-bottom: 1px solid rgb(234, 234, 234);
+                justify-content: space-between;
+                font-size: 12px;
+                padding: 10px 0;
+            }
+            p {
+                flex-basis: 20%;
+            }
+            .artists, .writers, .series-name, .price-value {
+                flex-basis: 70%;
+                color: rgb(131, 197, 228);
+            }
+            .series, .us-price, .onsale-date {
+                justify-content: flex-start;
+            }
+            .series-name {
+                text-transform: uppercase;
+            }
+            .price-value {
+                color: #666;
             }
         }
     }

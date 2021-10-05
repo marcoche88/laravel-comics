@@ -29,12 +29,12 @@ Route::get('/comics', function () {
 Route::get('/comics/{id}', function ($id) {
     $comics = config('comics');
 
-    // controllo se id è valido
-    if (is_numeric($id) && $id > 0 && $id < count($comics)) {
-        $comic = $comics[$id];
-        return view('comic', compact('comic'));
+    // controllo se id non è valido
+    if (!is_numeric($id) && $id < 0 && $id >= count($comics)) {
+        abort('404');
     }
-    abort('404');
+    $comic = $comics[$id];
+    return view('comic', compact('comic'));
 })->name('comic');
 
 Route::get('/movies', function () {

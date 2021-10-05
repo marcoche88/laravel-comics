@@ -316,23 +316,19 @@ header figure {
 #comic .info-box .info .art, #comic .info-box .info .written, #comic .info-box .info .series, #comic .info-box .info .us-price, #comic .info-box .info .onsale-date {
   display: flex;
   border-bottom: 1px solid #eaeaea;
-  justify-content: space-between;
   font-size: 12px;
   padding: 10px 0;
 }
 #comic .info-box .info p {
-  flex-basis: 20%;
+  flex-basis: 30%;
 }
 #comic .info-box .info .artists, #comic .info-box .info .writers, #comic .info-box .info .series-name, #comic .info-box .info .price-value {
-  flex-basis: 70%;
+  flex-basis: 60%;
   color: #83c5e4;
-}
-#comic .info-box .info .series, #comic .info-box .info .us-price, #comic .info-box .info .onsale-date {
-  justify-content: flex-start;
 }
 #comic .info-box .info .series-name {
   text-transform: uppercase;
 }
-#comic .info-box .info .price-value {
+#comic .info-box .info .price-value, #comic .info-box .info .date {
   color: #666;
 }

@@ -84,24 +84,20 @@
             .art, .written, .series, .us-price, .onsale-date {
                 display: flex;
                 border-bottom: 1px solid rgb(234, 234, 234);
-                justify-content: space-between;
                 font-size: 12px;
                 padding: 10px 0;
             }
             p {
-                flex-basis: 20%;
+                flex-basis: 30%;
             }
             .artists, .writers, .series-name, .price-value {
-                flex-basis: 70%;
+                flex-basis: 60%;
                 color: rgb(131, 197, 228);
-            }
-            .series, .us-price, .onsale-date {
-                justify-content: flex-start;
             }
             .series-name {
                 text-transform: uppercase;
             }
-            .price-value {
+            .price-value, .date {
                 color: #666;
             }
         }
